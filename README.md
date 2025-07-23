@@ -1,2 +1,14 @@
 # Calc_Taup
-Calc: take  off angle
+这个简单的脚本是用来计算take_off_angle以及travel_time.
+通常JMA2001文件包括了三个文件夹
+JMA2001
+take_off_angle
+travel_time
+velocity_structure
+为了构建不同区域类似的文件类型，这里是基于已知速度模型来计算take_off_angle以及travel_time.。
+
+0. 首先根据区域速度模型融合到.tvel文件，.tevl文件可以从Taup程序中的StdModels获取，只需要把最上面的0-50km修改成区域的速度模型。
+1. 通过obspy来生成.npz文件。对应的代码1_xxx
+2. 通过obspy来生成travel_time，这里的数据格式与JMA一样，同时网格化也一样
+3. 通过obspy来生成take_off_angle，这里的数据格式与JMA一样，同时网格化也一样
+
