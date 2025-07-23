@@ -52,3 +52,8 @@ python 3_take_off_angle.py
 
 - Both travel times and take-off angles are calculated on a predefined depth and distance grid, consistent with the JMA convention.
 - Output files are written in fixed-width ASCII format to match JMA’s format exactly.
+
+## References
+
+JMA: https://www.data.jma.go.jp/eqev/data/bulletin/catalog/appendix/appendix_e.html
+Taup: https://www.seis.sc.edu/taup/
